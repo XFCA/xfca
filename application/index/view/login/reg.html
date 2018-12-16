@@ -1,0 +1,15 @@
+{extend name='public/static/html/base.html' /}
+{block name='title'}{__block__}-注册{/block}
+{block name='link'}{__block__}
+<link rel='stylesheet' type='text/css' href='public/static/css/log_reg.css' />
+{/block}
+{block name='main'}
+<div class='log_reg'>
+<form action='reg_jump' method='post'> <!--enctype=='multipart/form-data'>--><!-- accept-charset='utf-8'-->
+<label>邮箱：</label><input type='text' name='email'><br />
+<label>用户名：</label><input type='text' name='name'></br>
+<label>密码：</label><input type='password' name='passwd'></br>
+<input class='botton' type='submit' value='注册' class='botton'>
+</form>
+</div>
+{/block}

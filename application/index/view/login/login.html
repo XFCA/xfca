@@ -1,0 +1,23 @@
+{extend name='public/static/html/base.html' /}
+{block name='title'}{__block__}-登录{/block}
+{block name='link'}{__block__}
+<link rel='stylesheet' type='text/css' href='public/static/css/log_reg.css' />
+{/block}
+{block name='style'}#reg{
+float:left;
+margin-top:5px;
+font-size:small;
+}
+{/block}
+{block name='main'}
+<div class='log_reg'>
+<form action='login_jump' method='post'>
+<label>用户名：</label><input type='text' name='name'><br />
+<label>密码：</label><input type='password' name='passwd'></br>
+<div id='reg'>
+<a href='reg' >还没有账号？</a>
+</div>
+<input class='botton' type='submit' value='登录'>
+</form>
+</div>
+{/block}

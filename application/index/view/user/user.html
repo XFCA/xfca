@@ -1,0 +1,41 @@
+{extend name='public/static/html/base.html' /}
+{block name='link'}
+{__block__}
+<link rel='stylesheet' type='text/css' href='public/static/css/user.css' />
+<script>
+$(document).ready(function(){
+$('button').click(function(){
+$.post('user/own',{name:"wangjinhao",},function(data,status){
+$("#test").html(data.name);});
+});
+});
+</script>
+{/block}
+{block name='style'}{__block__}
+#box_1{margin:0 auto;width:750px;}
+#box_2{margin:30px 25px 20px;float:left;}
+#box_3{border-top:2px inset blueviolet;border-bottom:2px solid dark;}
+{/block}
+{block name='main'}
+<div id='box_1'>
+  <div id='box_2'>
+    <img src='data/{$name}/avatar.png' height='70px' id='ava_bg' class='ava_bg'/>
+    <h1 id='t_1' class='t_1'>{$user.Name}</h1>
+    <button type='button' id='t_2' class='btn t_2'>编辑</button>
+  </div>
+
+  <div id='box_3' class='Clear'>
+    <ul>
+      <li><span class='li_1'>用户名</span><span class='li_2'>:</span><span id='name' class='li_3'>{$user.Name}</span></li>
+      <li><span class='Clear li_1'>邮箱</span><span class='li_2'>:</span><span id='email' class='li_3'>{$user.Email}</span></li>
+      <li><span class='Clear li_1'>性别</span><span class='li_2'>:</span><span id='sex' class='li_3'>{$user.Sex}</span></li>
+      <li><span class='Clear li_1'>生日</span><span class='li_2'>:</span><span id='bir'class='li_3'>{$user.Birthday}</span></li>
+    </ul>
+  </div>
+<div>
+  <hr class='Clear'>
+</div>
+
+<div id='test'><p>wang</p></div>
+<button>k</button>
+{/block}
