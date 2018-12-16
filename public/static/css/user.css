@@ -1,0 +1,34 @@
+.ava_bg{
+float:left;
+border:2px solid cornflowerblue;
+}
+.t_1{
+float:left;
+color:darkcyan;
+margin:25px 20px 10px;
+}
+.t_2{
+float:left;
+margin:40px 0 0;
+}
+ul{
+list-style:none;
+line-height:2;
+margin:30px 0 0;
+font-size:large;
+}
+.li_1{
+float:left;
+width:80px;
+font-weight:bold;
+vertical-align:middle;
+}
+.li_2{
+float:left;
+width:40px;
+vertical-align:middle;
+}
+.li_3{
+font-size:small;
+vertical-align:middle;
+}

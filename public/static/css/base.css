@@ -1,0 +1,55 @@
+/*base*/
+body{
+  margin:0px;
+  background-image:url('../picture/bkg_9.png');
+}
+
+a{
+  text-decoration:none;
+}
+
+/*header*/
+#header{
+  height:60px;
+  max-width:unset;
+  background-color:hsla(50,10%,80%,0.9);/*色调、饱和度、亮度、透明度*/
+  position:sticky;
+position:-webkit-sticky;
+top:0px;
+}
+#logo{
+  height:50px;
+  padding:5px;
+  margin-left:20px;
+  float:left;
+}
+#head_left{
+  margin:10px 5px;
+  padding:10px;
+  float:left;
+}
+#head_right{
+  margin:10px 20px 10px 3px;
+  padding:10px;
+  float:right;
+}
+#avatar{
+  height:40px;
+  margin:10px 0px;
+  border-radius:30%;
+  border:1.5px solid wheat;
+  float:right;
+}
+
+#main{
+  margin:0 8px;
+}
+
+/*字体*/
+.font_1{
+  font-size:16px;
+}
+
+.Clear{
+clear:both;
+}

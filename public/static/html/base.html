@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!--<meta name='viewport' content='width=device-width, initial-scale=1'>
+-->
+<title>{block name='title'}小风车{/block}</title>
+{block name='link'}
+
+<link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<link rel='stylesheet' type='text/css' href='public/static/css/base.css'>
+{/block}
+<style>{block name='style'}{/block}</style>
+</head>
+<body>
+{include file='public/static/html/header.html' /}
+<div class='Clear'></div>
+<div id='main'>{block name='main'}主体{/block}</div>
+<div class='Clear'></div>
+{include file='public/static/html/footer.html' /}
+</body>
+</html>

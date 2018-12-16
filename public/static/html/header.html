@@ -1,0 +1,17 @@
+<div id='header' class='font_1'>
+  <div id='logo'><a href='home'><img src='public/static/picture/logo_2.png' height='50px'/></a></div>
+  <div id='head_left'><a href='home'>小风车</a></div>
+
+  <div id='head_right'>
+    {present name='name'}
+    <a href='user'>{$name}</a>&nbsp;|
+    <a href='logout'>退出登录</a>
+    {else /}
+    <a href='login'>登录</a>&nbsp;|
+    <a href='reg'>注册</a>
+    {/present}
+  </div>
+  {present name='name'}
+  <div id='avatar'><a href='user'><img src='data/{$name}/avatar.png' height='40px' /></a></div>
+  {/present}
+</div>
